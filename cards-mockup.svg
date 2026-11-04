@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA0" />
+      <stop offset="45%" stop-color="#FFCF24" />
+      <stop offset="100%" stop-color="#BF8D00" />
+    </linearGradient>
+    <linearGradient id="cardDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#232836" />
+      <stop offset="100%" stop-color="#111319" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card (Perspective Offset) -->
+  <g transform="matrix(0.92 0.12 -0.15 0.94 130 50)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="260" height="150" rx="12" fill="#181B24" stroke="#3D4457" stroke-width="2"/>
+    <rect x="25" y="25" width="40" height="40" rx="8" fill="#FFCF24" opacity="0.15"/>
+    <line x1="25" y1="85" x2="180" y2="85" stroke="#4A5268" stroke-width="6" stroke-linecap="round"/>
+    <line x1="25" y1="105" x2="130" y2="105" stroke="#373D4E" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Foreground Card (Luxury Gold Foil Business Card) -->
+  <g transform="matrix(0.95 -0.06 0.08 0.96 85 90)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="280" height="160" rx="14" fill="url(#cardDark)" stroke="url(#cardGold)" stroke-width="2.5"/>
+    
+    <!-- Foil Stamped Emblem -->
+    <circle cx="55" cy="55" r="24" fill="none" stroke="url(#cardGold)" stroke-width="2"/>
+    <path d="M 43 65 L 43 45 L 50 56 L 55 49 L 60 56 L 67 45 L 67 65" fill="none" stroke="url(#cardGold)" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Gold Name & Title -->
+    <text x="95" y="52" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" letter-spacing="1">MERLIMORRIS</text>
+    <text x="95" y="70" fill="url(#cardGold)" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10" letter-spacing="2">PRINTING SOLUTIONS</text>
+    
+    <!-- Decorative dividing foil stripe -->
+    <line x1="30" y1="96" x2="250" y2="96" stroke="url(#cardGold)" stroke-width="1.5" stroke-dasharray="8 4"/>
+
+    <!-- Contact details on card -->
+    <text x="30" y="122" fill="#B8ADAD" font-family="sans-serif" font-size="9.5" font-weight="600">Unnappilavu, Mullaitivu • 24/6</text>
+    <text x="30" y="138" fill="url(#cardGold)" font-family="sans-serif" font-size="9.5" font-weight="700">+94 71 988 7110 • Same-Day Dispatch</text>
+
+    <!-- Edge Foil Gilded Accent -->
+    <circle cx="245" cy="40" r="12" fill="url(#cardGold)" opacity="0.9"/>
+    <text x="245" y="44" fill="#0E1118" font-family="sans-serif" font-size="8" font-weight="900" text-anchor="middle">350G</text>
+  </g>
+</svg>

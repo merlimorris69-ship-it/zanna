@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="holoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF" />
+      <stop offset="35%" stop-color="#FF007F" />
+      <stop offset="70%" stop-color="#FFCF24" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <linearGradient id="stkGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA0" />
+      <stop offset="100%" stop-color="#FFCF24" />
+    </linearGradient>
+    <filter id="stkShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Left: Round Die-cut Coffee / Brand Sticker with Peel-off Backing Effect -->
+  <g transform="translate(60, 50)" filter="url(#stkShadow)">
+    <!-- Backing sheet corner -->
+    <rect x="-15" y="-15" width="180" height="180" rx="16" fill="#1C212E" stroke="#384257" stroke-width="1.5" stroke-dasharray="6 4"/>
+    
+    <!-- Die-Cut Circle Sticker -->
+    <circle cx="75" cy="75" r="70" fill="#10131B" stroke="url(#stkGold)" stroke-width="3"/>
+    <circle cx="75" cy="75" r="62" fill="none" stroke="#B8ADAD" stroke-width="1" stroke-dasharray="4 3"/>
+
+    <!-- Coffee Cup / Logo Outline -->
+    <path d="M 55 65 C 55 90 95 90 95 65 Z" fill="url(#stkGold)"/>
+    <path d="M 95 70 C 102 70 102 80 95 80" fill="none" stroke="url(#stkGold)" stroke-width="3"/>
+    
+    <text x="75" y="108" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10" text-anchor="middle" letter-spacing="1">PREMIUM BREW</text>
+    <text x="75" y="122" fill="url(#stkGold)" font-family="sans-serif" font-weight="700" font-size="8" text-anchor="middle">WATERPROOF VINYL</text>
+
+    <!-- 3D Peel Tab in Upper Right -->
+    <path d="M 125 25 L 145 45 L 125 45 Z" fill="#E2DFDF" opacity="0.9"/>
+  </g>
+
+  <!-- Center Right: Holographic Die-Cut Badge -->
+  <g transform="translate(270, 70)" filter="url(#stkShadow)">
+    <polygon points="100,10 170,40 190,110 150,170 60,170 10,110 30,40" fill="#161924" stroke="url(#holoGrad)" stroke-width="3.5"/>
+    <polygon points="100,20 160,45 178,105 142,158 68,158 22,105 40,45" fill="none" stroke="url(#holoGrad)" stroke-width="1" opacity="0.6"/>
+
+    <text x="100" y="80" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="16" text-anchor="middle">HOLO FOIL</text>
+    <text x="100" y="98" fill="url(#holoGrad)" font-family="sans-serif" font-weight="800" font-size="11" text-anchor="middle">RAINBOW SHEEN</text>
+    <text x="100" y="120" fill="#B8ADAD" font-family="sans-serif" font-size="9" text-anchor="middle">UV &amp; Scratch Proof</text>
+    <rect x="60" y="130" width="80" height="15" rx="7.5" fill="url(#stkGold)"/>
+    <text x="100" y="141" fill="#0E1118" font-family="sans-serif" font-weight="900" font-size="8" text-anchor="middle">EASY PEEL</text>
+  </g>
+</svg>
